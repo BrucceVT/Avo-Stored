@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes avo {
+  0%, 80%{
+    transform: rotateX(0deg);
+  }
+  90%, 95%{
+    transform: rotateX(65deg);
+  }
+  95%, 100%{
+    transform: rotateX(0deg);
+  }
+}
+
+:root {
+  --foreground-rgb: #E3E4E9;
+  --background-start-rgb: #E5E9ED;
+  --background-end-rgb: #F1F1F1;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
